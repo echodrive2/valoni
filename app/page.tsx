@@ -85,7 +85,7 @@ export default function Home() {
 
       {/* ── Hero ─────────────────────────────────────────────────────────── */}
       <section className="relative flex min-h-screen flex-col items-center justify-center bg-yellow-400 px-6 text-center">
-        <div className="mb-6">
+        <div className="relative mb-6 inline-block">
           <Image
             src="/car.png"
             alt="Valoni taxi car"
@@ -94,6 +94,9 @@ export default function Home() {
             className="drop-shadow-2xl"
             priority
           />
+          <div className="absolute -top-5 left-1/2 -translate-x-1/2 rounded-lg bg-gray-900 px-5 py-1.5 shadow-lg">
+            <span className="text-xl font-black tracking-[0.3em] text-yellow-400">TAXI</span>
+          </div>
         </div>
         <h1 className="text-5xl font-extrabold tracking-tight text-gray-900 sm:text-6xl">
           {COMPANY_NAME}
